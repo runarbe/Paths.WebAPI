@@ -15,7 +15,7 @@ System requirements
 * SOLR
 
 
-Setup
+Installation and usage
 ============
 
-* Setup instructions and documentation on the [Wiki section]
+* For instructions on how to install and use the Paths WebAPI please refer to the GitHub Wiki for the Paths.WebAPI repository.
