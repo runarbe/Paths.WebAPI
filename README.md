@@ -18,4 +18,4 @@ System requirements
 Installation and usage
 ============
 
-* For instructions on how to install and use the Paths WebAPI please refer to the GitHub Wiki for the Paths.WebAPI repository.
+* For instructions on how to install and use the Paths WebAPI please refer to the GitHub Wiki for the Paths.WebAPI repository at https://github.com/runarbe/Paths.WebAPI/wiki
