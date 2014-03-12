@@ -1,0 +1,139 @@
+
+<html>
+  <head>
+    <meta name="generator"
+    content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
+    <title>PATHS Web Service API v2.0 | api2.paths-project.eu</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <img class="paths-logo" src="img/paths-logo.jpg" />
+      <h1>PATHS - Web Services API v2.0</h1>
+	  <p class="lead">This is the public end-point of the PATHS Web Service API. Here you will find a simple introduction as well as code samples and documentation.</p>
+      <h2>PATHS Prototype Application</h2>
+      <ul>
+        <li>PATHS prototype <a href="http://prototype2.paths-project.eu/">prototype2.paths-project.eu</a>. Will also be available from <strong>explorer.paths-project.eu</strong></li>
+      </ul>
+	  <h2>PATHS Web Service API Reference Documentation</h2>
+	  <p>In order facilitate the efficient use of the system, an online API reference is available from the <a href="documentation/default.aspx">here</a>. Here users can find documentation for all Web Services, Web Methods as well as their respective request and response formats.</p>
+      <h2>List of Web Services</h2>
+      <ul>
+        <li>Usr: 
+        <a href="Usr.asmx">Usr.asmx</a></li>
+        <li>Path, Node: 
+        <a href="Path.asmx">Path.asmx</a></li>
+        <li>Workspace: 
+        <a href="Workspace.asmx">Workspace.asmx</a></li>
+        <li>Comment, Tag, Rating: 
+        <a href="Social.asmx">Social.asmx</a></li>
+        <li>Item: 
+        <a href="Item.asmx">Item.asmx</a></li>
+        <li>Topic: 
+        <a href="Topic.asmx">Topic.asmx</a></li>
+        <li>Search: 
+        <a href="Search.asmx">Search.asmx</a></li>
+        <li>Solr (a Proxy for access to a SOLR select end-point): 
+        <a href="SolrProxy.aspx">SolrProxy.aspx</a></li>
+      </ul>
+      <p>By default, these web services will return the response JSON wrapped in an XML element named &quot;string&quot;. The
+      encoding will be UTF-8. To get pure JSON, please make sure to pass the Content-Type parameter as part of the HTTP/POST
+      request:</p>
+      <blockquote>
+      <b>EXAMPLE:</b> 
+      <i>HTTP Header of POST Request</i>
+      <b>
+        <br />
+      </b>
+      <br />Content-Type: application/json; charset=utf-8</blockquote>
+      <p>If you use a library like Jquery to parse the HTTP request, an additional paramter instructs the parser of the format of
+      the return data type. Similar mechanisms may exist for other parsers.</p>
+      <blockquote class="style1">
+      <b>EXAMPLE:</b> 
+      <i>jQuery.ajax request:</i>
+      <b>
+        <br />
+      </b>
+      <br />    $.ajax({
+      <br />        type: &quot;POST&quot;,
+      <br />        url: &quot;/Usr.asmx/CreateUser&quot;,
+      <br />        data: &quot;{
+      <br />            &#39;cognitiveStyle&#39;:&#39;1&#39;,
+      <br />            &#39;usr&#39;:&#39;myUser&#39;,
+      <br />            &#39;pwd&#39;:&#39;myPassword&#39;,
+      <br />            
+      <a href="mailto:&#39;email&#39;:&#39;myEmail@myDomain.com">&#39;email&#39;:&#39;myEmail@myDomain.com</a>&#39;,
+      <br />            &#39;openid&#39;:&#39;true&#39;}&quot;,
+      <br />
+      <b>        contentType: &quot;application/json; charset=utf-8&quot;,
+      <br /></b>         
+      <b>dataType: &quot;json&quot;,</b>
+      <br />        success: done,
+      <br />        error: cstatus
+      <br />    });
+      <br /></blockquote>
+      <p>The JSON result of any web service request will be wrapped in an additional top-level object &quot;d&quot;. Take this into
+      account when parsing the response. This is supposedly a &quot;security&quot; feature of the .NET Framework. On the next level
+      of the object, the value &quot;code&quot; states whether the request was successful and the object data is an array of
+      values.</p>
+      <blockquote>
+      <b>EXAMPLE:</b> 
+      <i>Response JSON from Web Service Request
+      <br />
+      <br />   </i> {
+      <b>
+      <br />        &quot;d</b>&quot;:{
+      <br />            &quot;code&quot;: &quot;2&quot;,
+      <br />            &quot;data&quot;:
+      [{&quot;id&quot;:&quot;1&quot;,&quot;fk_usr_id&quot;:&quot;1&quot;,&quot;fk_rel_uri&quot;:&quot;http://www.bergheim.dk&quot;,&quot;comment&quot;:&quot;This
+      is a third comment&quot;,&quot;isdeleted&quot;:&quot;0&quot;,&quot;tstamp&quot;:&quot;04/04/2012 23:56:21&quot;}]
+      <br />        }
+      <br />    }
+      <br />
+      <br />
+      <i>To return the value of &quot;fk_rel_uri&quot; in JavaScript, you would type
+      <br />var uri = d.data[0].fk_rel_uri;</i></blockquote>
+      <p style="direction: ltr">When a JSON result yields more than one return item, i.e. a result set from a query, items are
+      accesible through a zero-based Array.</p>
+      <blockquote class="style1">
+      <b>EXAMPLE:</b> Response JSON from Web Service Request yielding more than one item
+      <br />
+      <br />    {
+      <br />        &quot;d&quot;:{
+      <br />                &quot;code&quot;: &quot;2&quot;,
+      <br />                &quot;data&quot;:
+      [{&quot;id&quot;:&quot;3&quot;,&quot;fk_usr_id&quot;:&quot;1&quot;,&quot;fk_rel_uri&quot;:&quot;http://www.bergheim.dk&quot;,&quot;comment&quot;:&quot;A
+      comment&quot;,&quot;isdeleted&quot;:&quot;0&quot;,&quot;tstamp&quot;:&quot;04/04/2012 23:56:21&quot;},
+      <br />               
+      {&quot;id&quot;:&quot;2&quot;,&quot;fk_usr_id&quot;:&quot;1&quot;,&quot;fk_rel_uri&quot;:&quot;http://www.bergheim.dk&quot;,&quot;comment&quot;:&quot;Another
+      comment&quot;,&quot;isdeleted&quot;:&quot;0&quot;,&quot;tstamp&quot;:&quot;04/04/2012 23:56:21&quot;},
+      <br />               
+      {&quot;id&quot;:&quot;1&quot;,&quot;fk_usr_id&quot;:&quot;1&quot;,&quot;fk_rel_uri&quot;:&quot;http://www.bergheim.dk&quot;,&quot;comment&quot;:&quot;A
+      third comment&quot;,&quot;isdeleted&quot;:&quot;0&quot;,&quot;tstamp&quot;:&quot;04/04/2012 23:56:21&quot;}]
+      <br />        }
+      <br />    }
+      <br />
+      <br />
+      <i>To iterate through the results and retrieve the comments in JavaScript you would do something like this:
+      <br />for (var i = 0; i &lt; jsonData.d.data.length; i++) {
+      <br />    var title = d.data[i].comment;
+      <br /></i> }</blockquote>
+      <h2>Service status codes</h2>
+      <p>The following return codes are used for PATHS web services and can be used to validate the results.</p>
+      <blockquote>1: Authentication failed, wrong username or password.
+      <br />2: Operation completed successfully
+      <br />3: Operation failed!
+      <br />4: Authentication succeeded, user logged in</blockquote>
+      <h2>Authentication</h2>
+      <p style="direction: ltr">Most of the services require the user to be authenticated. Authentication is maintained between
+      requests through a session cookie which is sent along with the HTTP-request from the Client application. A call to the web
+      service &quot;Authenticate&quot; with the credentials as parameters will set session variables letting other web services
+      know that the user is authenticated - as well as store the usr_id for use in user profile related functions.</p>
+      <blockquote>
+        <span> http://development.paths-project.eu/Usr.asmx/Authenticate</span>
+      </blockquote>
+      <hr />
+      <p>The PATHS project is co-funded by the European Commission. © PATHS Project 2013. Some rights reserved.</p>
+    </div>
+  </body>
+</html>

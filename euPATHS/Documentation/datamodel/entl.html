@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html";>
+<meta name="keywords" content="DeZign for Databases - HTML Report">
+<meta name="author" content="Datanamic - www.datanamic.com">
+<title>DeZign for Databases v5.2 - HTML Report</title>
+<link rel="stylesheet" type="text/css" media="screen,print" href="dezign.css" title="report">
+</head>
+<body bgcolor="#FFFFFF" leftmargin="20" topmargin="10" marginwidth="20" marginheight="10">
+<div class="top">Logical model</div>
+<ul id="menu">
+<li><a href="index.html">Project details</a></li>
+<li><a href="erdiagram.html">ER diagram</a></li>
+<li><a href="entl.html">Entities</a></li>
+<li><a href="rell.html">Relationships</a></li>
+</ul>
+<div class="row">
+<div class="activetab">List of entities</div>
+<div class="tab"><a href="entd.html">Entity details</a></div>
+</div>
+<table width=90% border=0 cellSpacing=0 cellPadding=0 class="chapter">
+<tr>
+<td class="right" valign=top>
+<table width="100%" border=0 class="detailstable">
+<tr><td class="fieldname">Entity name</td><td class="fieldname">Primary key attributes</td><td class="fieldname"># Attributes</td><td class="fieldname">Description</td></tr>
+<tr><td class="fielddata">behaviour_link</td><td class="fielddata">id</td><td class="fielddata">5</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata">cog_style</td><td class="fielddata">id</td><td class="fielddata">2</td><td class="fielddata">Cognitive styles (codelist)</td></tr>
+<tr><td class="fielddata">comment</td><td class="fielddata">id</td><td class="fielddata">6</td><td class="fielddata">User generated comments</td></tr>
+<tr><td class="fielddata">item</td><td class="fielddata">id</td><td class="fielddata">37</td><td class="fielddata">Expand to support entire ESE</td></tr>
+<tr><td class="fielddata">item_link</td><td class="fielddata">id</td><td class="fielddata">10</td><td class="fielddata">Expand to support all annotation from ESE+</td></tr>
+<tr><td class="fielddata">item_similarity</td><td class="fielddata">id</td><td class="fielddata">5</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata">item_topic</td><td class="fielddata">id</td><td class="fielddata">3</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata">node</td><td class="fielddata">id</td><td class="fielddata">8</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata">node_link</td><td class="fielddata">id,  fk_snode_id,  fk_tnode_id</td><td class="fielddata">5</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata">node_link_type</td><td class="fielddata">id</td><td class="fielddata">2</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata">path</td><td class="fielddata">id</td><td class="fielddata">12</td><td class="fielddata">Descriptive data and metadata for paths,  collections of nodes</td></tr>
+<tr><td class="fielddata">rating</td><td class="fielddata">id,  fk_usr_id,  fk_rating_scale_id</td><td class="fielddata">5</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata">rating_scale</td><td class="fielddata">id</td><td class="fielddata">2</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata">tag</td><td class="fielddata">id</td><td class="fielddata">4</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata">tagging</td><td class="fielddata">id</td><td class="fielddata">5</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata">topic</td><td class="fielddata">id</td><td class="fielddata">7</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata">ubehaviour</td><td class="fielddata">id</td><td class="fielddata">5</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata">ugroup</td><td class="fielddata">id</td><td class="fielddata">2</td><td class="fielddata">Table with names of user groups</td></tr>
+<tr><td class="fielddata">usession</td><td class="fielddata">id</td><td class="fielddata">5</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata">usr</td><td class="fielddata">id</td><td class="fielddata">9</td><td class="fielddata">User profiles</td></tr>
+<tr><td class="fielddata">usr_ugroup</td><td class="fielddata">id</td><td class="fielddata">3</td><td class="fielddata">Many-to-many relationship table between users and user groups.</td></tr>
+<tr><td class="fielddata">workspace</td><td class="fielddata">id</td><td class="fielddata">6</td><td class="fielddata">Temporary storage table for half-baked nodes and items that a user wants to add to PATHS at a later stage after working on them.</td></tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>SOLR Admin Links</title>
+</head>
+<body>
+<h1>SOLR Admin Links</h1>
+<h2>Admin links for Solr core "paths2"</h2>
+<a href="http://localhost:8080/solr/paths2/select?q=*:*">Select from europeana</a><br />
+<a href="http://localhost:8080/solr/paths2/paths2-import?command=status">View status items</a><br />
+<a href="http://localhost:8080/solr/paths2/paths2-import?command=reload-config">Reload configuration items</a><br />
+<a href="http://localhost:8080/solr/paths2/paths2-import?command=abort">Cancel operation items</a><br />
+<a href="http://localhost:8080/solr/paths2/paths2-import?command=full-import&clean=false">Update index for items</a><br />
+<a href="http://localhost:8080/solr/paths2/paths2-import-pn?command=status">View status paths/nodes</a><br />
+<a href="http://localhost:8080/solr/paths2/paths2-import-pn?command=reload-config">Reload configuration paths/nodes</a><br />
+<a href="http://localhost:8080/solr/paths2/paths2-import-pn?command=abort">Cancel operation paths/nodes</a><br />
+<a href="http://localhost:8080/solr/paths2/paths2-import-pn?command=full-import&clean=false">Update index for paths/nodes</a><br />
+<a href="http://localhost:8080/solr/paths2/update?stream.body=<delete><query>dc_type:path</query></delete>&commit=true">Delete all paths</a><br />
+<a href="http://localhost:8080/solr/paths2/update?stream.body=<delete><query>dc_type:node</query></delete>&commit=true">Delete all nodes</a><br />
+<a href="http://localhost:8080/solr/paths2/update?stream.body=<delete><query>dc_type:item</query></delete>&commit=true">Delete all items</a><br />
+</body>
+</html>

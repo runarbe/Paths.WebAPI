@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html";>
+<meta name="keywords" content="DeZign for Databases - HTML Report">
+<meta name="author" content="Datanamic - www.datanamic.com">
+<title>DeZign for Databases v5.2 - HTML Report</title>
+<link rel="stylesheet" type="text/css" media="screen,print" href="dezign.css" title="report">
+</head>
+<body bgcolor="#FFFFFF" leftmargin="20" topmargin="10" marginwidth="20" marginheight="10">
+<div class="top">Logical model</div>
+<ul id="menu">
+<li><a href="index.html">Project details</a></li>
+<li><a href="erdiagram.html">ER diagram</a></li>
+<li><a href="entl.html">Entities</a></li>
+<li><a href="rell.html">Relationships</a></li>
+</ul>
+<div class="row">
+<div class="tab"><a href="entl.html">List of entities</a></div>
+<div class="activetab">Entity details</div>
+</div>
+<table width=90% border=0 cellSpacing=0 cellPadding=0 class="chapter">
+<tr>
+<td class="right" valign=top>
+<A NAME="behaviour_link"></A>
+<div class="objectname">Entity: behaviour_link</div>
+<div class="details">Entity details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key constraint name</td><td class="fielddata">PK_behaviour_link</td></tr>
+</table>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td class="fieldname">Key</td><td class="fieldname">Attribute name</td><td class="fieldname">Data type</td><td class="fieldname">Not null</td><td class="fieldname">Description</td></tr>
+<tr><td class="fielddata">PK</td><td class="fielddata">id</td><td class="fielddata">SERIAL</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata">FK</td><td class="fielddata">fk_rel_suri</td><td class="fielddata">CHARACTER VARYING</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata">FK</td><td class="fielddata">fk_rel_turi</td><td class="fielddata">CHARACTER VARYING</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">avg_ttime</td><td class="fielddata">INTEGER</td><td class="fielddata">No</td><td class="fielddata">Average time at target URI in seconds</td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">trav_count</td><td class="fielddata">INTEGER</td><td class="fielddata">No</td><td class="fielddata">Number of times a link has been traversed</td></tr>
+</table>
+<A NAME="cog_style"></A>
+<div class="objectname">Entity: cog_style</div>
+<div class="details">Entity details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata">Cognitive styles (codelist)</td></tr>
+<tr><td class="fieldname">Primary key constraint name</td><td class="fielddata">PK_cog_style</td></tr>
+</table>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td class="fieldname">Key</td><td class="fieldname">Attribute name</td><td class="fieldname">Data type</td><td class="fieldname">Not null</td><td class="fieldname">Description</td></tr>
+<tr><td class="fielddata">PK</td><td class="fielddata">id</td><td class="fielddata">SERIAL</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">title</td><td class="fielddata">CHARACTER VARYING</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="comment"></A>
+<div class="objectname">Entity: comment</div>
+<div class="details">Entity details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata">User generated comments</td></tr>
+<tr><td class="fieldname">Primary key constraint name</td><td class="fielddata">PK_comment</td></tr>
+</table>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td class="fieldname">Key</td><td class="fieldname">Attribute name</td><td class="fieldname">Data type</td><td class="fieldname">Not null</td><td class="fieldname">Description</td></tr>
+<tr><td class="fielddata">PK</td><td class="fielddata">id</td><td class="fielddata">SERIAL</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata">FK</td><td class="fielddata">fk_usr_id</td><td class="fielddata">INTEGER</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">fk_rel_uri</td><td class="fielddata">CHARACTER VARYING</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">comment</td><td class="fielddata">TEXT</td><td class="fielddata">Yes</td><td class="fielddata">TEXT</td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">isdeleted</td><td class="fielddata">BOOLEAN</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">tstamp</td><td class="fielddata">TIMESTAMP WITH TIME ZONE</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="item"></A>
+<div class="objectname">Entity: item</div>
+<div class="details">Entity details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata">Expand to support entire ESE</td></tr>
+<tr><td class="fieldname">Primary key constraint name</td><td class="fielddata">PK_item</td></tr>
+</table>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td class="fieldname">Key</td><td class="fieldname">Attribute name</td><td class="fieldname">Data type</td><td class="fieldname">Not null</td><td class="fieldname">Description</td></tr>
+<tr><td class="fielddata">PK</td><td class="fielddata">id</td><td class="fielddata">SERIAL</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">uri</td><td class="fielddata">CHARACTER VARYING</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">dc_title</td><td class="fielddata">TEXT</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">dc_creator</td><td class="fielddata">TEXT</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">dc_subject</td><td class="fielddata">TEXT</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">dc_description</td><td class="fielddata">TEXT</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">dc_publisher</td><td class="fielddata">TEXT</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">dc_contributor</td><td class="fielddata">TEXT</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">dc_date</td><td class="fielddata">TEXT</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">dc_type</td><td class="fielddata">TEXT</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">dc_format</td><td class="fielddata">TEXT</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">dc_identifier</td><td class="fielddata">CHARACTER VARYING</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">dc_source</td><td class="fielddata">TEXT</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">dc_language</td><td class="fielddata">TEXT</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">dc_relation</td><td class="fielddata">TEXT</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">dc_rights</td><td class="fielddata">TEXT</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">dc_coverage</td><td class="fielddata">TEXT</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">dcterms_provenance</td><td class="fielddata">TEXT</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">dcterms_ispartof</td><td class="fielddata">TEXT</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">dcterms_temporal</td><td class="fielddata">TEXT</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">dcterms_spatial</td><td class="fielddata">TEXT</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">europeana_unstored</td><td class="fielddata">TEXT</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">europeana_object</td><td class="fielddata">TEXT</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">europeana_provider</td><td class="fielddata">TEXT</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">europeana_type</td><td class="fielddata">TEXT</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">europeana_rights</td><td class="fielddata">TEXT</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">europeana_dataprovider</td><td class="fielddata">TEXT</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">europeana_isshownby</td><td class="fielddata">TEXT</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">europeana_isshownat</td><td class="fielddata">TEXT</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">europeana_country</td><td class="fielddata">TEXT</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">europeana_language</td><td class="fielddata">TEXT</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">europeana_uri</td><td class="fielddata">TEXT</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">europeana_usertag</td><td class="fielddata">TEXT</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">europeana_year</td><td class="fielddata">CHARACTER VARYING</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">europeana_previewNoDistribute</td><td class="fielddata">TEXT</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">europeana_hasobject</td><td class="fielddata">TEXT</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">idxfti</td><td class="fielddata">TSVECTOR</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="item_link"></A>
+<div class="objectname">Entity: item_link</div>
+<div class="details">Entity details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata">Expand to support all annotation from ESE+</td></tr>
+<tr><td class="fieldname">Primary key constraint name</td><td class="fielddata">PK_item_link</td></tr>
+</table>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td class="fieldname">Key</td><td class="fieldname">Attribute name</td><td class="fieldname">Data type</td><td class="fieldname">Not null</td><td class="fieldname">Description</td></tr>
+<tr><td class="fielddata">PK</td><td class="fielddata">id</td><td class="fielddata">SERIAL</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata">FK</td><td class="fielddata">fk_rel_uri</td><td class="fielddata">CHARACTER VARYING</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">source</td><td class="fielddata">CHARACTER VARYING</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">field</td><td class="fielddata">CHARACTER VARYING</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">start_offset</td><td class="fielddata">INTEGER</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">end_offset</td><td class="fielddata">INTEGER</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">confidence</td><td class="fielddata">NUMERIC</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">method</td><td class="fielddata">CHARACTER VARYING</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">link</td><td class="fielddata">CHARACTER VARYING</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">sentiment</td><td class="fielddata">NUMERIC</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="item_similarity"></A>
+<div class="objectname">Entity: item_similarity</div>
+<div class="details">Entity details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key constraint name</td><td class="fielddata">PK_item_similarity</td></tr>
+</table>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td class="fieldname">Key</td><td class="fieldname">Attribute name</td><td class="fieldname">Data type</td><td class="fieldname">Not null</td><td class="fieldname">Description</td></tr>
+<tr><td class="fielddata">PK</td><td class="fielddata">id</td><td class="fielddata">SERIAL</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata">FK</td><td class="fielddata">fk_sitem_id</td><td class="fielddata">INTEGER</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata">FK</td><td class="fielddata">fk_titem_id</td><td class="fielddata">INTEGER</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">confidence</td><td class="fielddata">NUMERIC</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">sentiment</td><td class="fielddata">NUMERIC</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="item_topic"></A>
+<div class="objectname">Entity: item_topic</div>
+<div class="details">Entity details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key constraint name</td><td class="fielddata">PK_item_topic</td></tr>
+</table>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td class="fieldname">Key</td><td class="fieldname">Attribute name</td><td class="fieldname">Data type</td><td class="fieldname">Not null</td><td class="fieldname">Description</td></tr>
+<tr><td class="fielddata">PK</td><td class="fielddata">id</td><td class="fielddata">SERIAL</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata">FK</td><td class="fielddata">fk_item_id</td><td class="fielddata">INTEGER</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata">FK</td><td class="fielddata">fk_topic_id</td><td class="fielddata">INTEGER</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="node"></A>
+<div class="objectname">Entity: node</div>
+<div class="details">Entity details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key constraint name</td><td class="fielddata">PK_node</td></tr>
+</table>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td class="fieldname">Key</td><td class="fieldname">Attribute name</td><td class="fieldname">Data type</td><td class="fieldname">Not null</td><td class="fieldname">Description</td></tr>
+<tr><td class="fielddata">PK, FK</td><td class="fielddata">id</td><td class="fielddata">SERIAL</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata">FK</td><td class="fielddata">fk_rel_uri</td><td class="fielddata">CHARACTER VARYING</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">uri</td><td class="fielddata">CHARACTER VARYING</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">dc_title</td><td class="fielddata">CHARACTER VARYING</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">dc_description</td><td class="fielddata">TEXT</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">type</td><td class="fielddata">CHARACTER VARYING</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">isdeleted</td><td class="fielddata">BOOLEAN</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">tstamp</td><td class="fielddata">TIMESTAMP WITH TIME ZONE</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="node_link"></A>
+<div class="objectname">Entity: node_link</div>
+<div class="details">Entity details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key constraint name</td><td class="fielddata">PK_node_link</td></tr>
+</table>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td class="fieldname">Key</td><td class="fieldname">Attribute name</td><td class="fieldname">Data type</td><td class="fieldname">Not null</td><td class="fieldname">Description</td></tr>
+<tr><td class="fielddata">PK</td><td class="fielddata">id</td><td class="fielddata">SERIAL</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata">PK, FK</td><td class="fielddata">fk_snode_id</td><td class="fielddata">INTEGER</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata">PK, FK</td><td class="fielddata">fk_tnode_id</td><td class="fielddata">INTEGER</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata">FK</td><td class="fielddata">fk_node_link_type_id</td><td class="fielddata">INTEGER</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">trav_count</td><td class="fielddata">INTEGER</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="node_link_type"></A>
+<div class="objectname">Entity: node_link_type</div>
+<div class="details">Entity details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key constraint name</td><td class="fielddata">PK_node_link_type</td></tr>
+</table>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td class="fieldname">Key</td><td class="fieldname">Attribute name</td><td class="fieldname">Data type</td><td class="fieldname">Not null</td><td class="fieldname">Description</td></tr>
+<tr><td class="fielddata">PK</td><td class="fielddata">id</td><td class="fielddata">SERIAL</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">title</td><td class="fielddata">CHARACTER VARYING</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="path"></A>
+<div class="objectname">Entity: path</div>
+<div class="details">Entity details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata">Descriptive data and metadata for paths,  collections of nodes</td></tr>
+<tr><td class="fieldname">Primary key constraint name</td><td class="fielddata">PK_path</td></tr>
+</table>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td class="fieldname">Key</td><td class="fieldname">Attribute name</td><td class="fieldname">Data type</td><td class="fieldname">Not null</td><td class="fieldname">Description</td></tr>
+<tr><td class="fielddata">PK</td><td class="fielddata">id</td><td class="fielddata">SERIAL</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata">FK</td><td class="fielddata">fk_user_id</td><td class="fielddata">INTEGER</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">uri</td><td class="fielddata">CHARACTER VARYING</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">dc_title</td><td class="fielddata">CHARACTER VARYING</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">dc_subject</td><td class="fielddata">CHARACTER VARYING</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">dc_description</td><td class="fielddata">TEXT</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">dc_rights</td><td class="fielddata">CHARACTER VARYING</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">access</td><td class="fielddata">CHARACTER VARYING</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">lom_audience</td><td class="fielddata">TEXT</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">lom_length</td><td class="fielddata">CHARACTER VARYING</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">isdeleted</td><td class="fielddata">BOOLEAN</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">tstamp</td><td class="fielddata">TIMESTAMP WITH TIME ZONE</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="rating"></A>
+<div class="objectname">Entity: rating</div>
+<div class="details">Entity details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key constraint name</td><td class="fielddata">PK_rating</td></tr>
+</table>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td class="fieldname">Key</td><td class="fieldname">Attribute name</td><td class="fieldname">Data type</td><td class="fieldname">Not null</td><td class="fieldname">Description</td></tr>
+<tr><td class="fielddata">PK</td><td class="fielddata">id</td><td class="fielddata">SERIAL</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata">PK, FK</td><td class="fielddata">fk_usr_id</td><td class="fielddata">INTEGER</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata">PK, FK</td><td class="fielddata">fk_rating_scale_id</td><td class="fielddata">INTEGER</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">fk_rel_uri</td><td class="fielddata">CHARACTER VARYING</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">isdeleted</td><td class="fielddata">BOOLEAN</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="rating_scale"></A>
+<div class="objectname">Entity: rating_scale</div>
+<div class="details">Entity details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key constraint name</td><td class="fielddata">PK_rating_scale</td></tr>
+</table>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td class="fieldname">Key</td><td class="fieldname">Attribute name</td><td class="fieldname">Data type</td><td class="fieldname">Not null</td><td class="fieldname">Description</td></tr>
+<tr><td class="fielddata">PK</td><td class="fielddata">id</td><td class="fielddata">SERIAL</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">label</td><td class="fielddata">CHARACTER VARYING</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="tag"></A>
+<div class="objectname">Entity: tag</div>
+<div class="details">Entity details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key constraint name</td><td class="fielddata">PK_tag</td></tr>
+</table>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td class="fieldname">Key</td><td class="fieldname">Attribute name</td><td class="fieldname">Data type</td><td class="fieldname">Not null</td><td class="fieldname">Description</td></tr>
+<tr><td class="fielddata">PK</td><td class="fielddata">id</td><td class="fielddata">SERIAL</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">uri</td><td class="fielddata">CHARACTER VARYING</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">label</td><td class="fielddata">CHARACTER VARYING</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">lang</td><td class="fielddata">CHARACTER VARYING</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="tagging"></A>
+<div class="objectname">Entity: tagging</div>
+<div class="details">Entity details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key constraint name</td><td class="fielddata">PK_tagging</td></tr>
+</table>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td class="fieldname">Key</td><td class="fieldname">Attribute name</td><td class="fieldname">Data type</td><td class="fieldname">Not null</td><td class="fieldname">Description</td></tr>
+<tr><td class="fielddata">PK</td><td class="fielddata">id</td><td class="fielddata">SERIAL</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata">FK</td><td class="fielddata">fk_tag_id</td><td class="fielddata">INTEGER</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata">FK</td><td class="fielddata">fk_usr_id</td><td class="fielddata">INTEGER</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">fk_rel_uri</td><td class="fielddata">CHARACTER</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">isdeleted</td><td class="fielddata">BOOLEAN</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="topic"></A>
+<div class="objectname">Entity: topic</div>
+<div class="details">Entity details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key constraint name</td><td class="fielddata">PK_topic</td></tr>
+</table>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td class="fieldname">Key</td><td class="fieldname">Attribute name</td><td class="fieldname">Data type</td><td class="fieldname">Not null</td><td class="fieldname">Description</td></tr>
+<tr><td class="fielddata">PK</td><td class="fielddata">id</td><td class="fielddata">SERIAL</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata">FK</td><td class="fielddata">fk_parent_topic_id</td><td class="fielddata">INTEGER</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">uri</td><td class="fielddata">CHARACTER VARYING</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">dc_description</td><td class="fielddata">TEXT</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">dc_subject</td><td class="fielddata">CHARACTER VARYING</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">dc_title</td><td class="fielddata">CHARACTER VARYING</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">topic_thumbnails</td><td class="fielddata">CHARACTER VARYING</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="ubehaviour"></A>
+<div class="objectname">Entity: ubehaviour</div>
+<div class="details">Entity details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key constraint name</td><td class="fielddata">PK_ubehaviour</td></tr>
+</table>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td class="fieldname">Key</td><td class="fieldname">Attribute name</td><td class="fieldname">Data type</td><td class="fieldname">Not null</td><td class="fieldname">Description</td></tr>
+<tr><td class="fielddata">PK</td><td class="fielddata">id</td><td class="fielddata">SERIAL</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata">FK</td><td class="fielddata">fk_usession_id</td><td class="fielddata">INTEGER</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">fk_rel_suri</td><td class="fielddata">CHARACTER</td><td class="fielddata">Yes</td><td class="fielddata">URI of object user is navigating from</td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">fk_rel_turi</td><td class="fielddata">CHARACTER</td><td class="fielddata">Yes</td><td class="fielddata">URI of object user is navigating to</td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">stime</td><td class="fielddata">INTEGER</td><td class="fielddata">No</td><td class="fielddata">Time spent at source in seconds</td></tr>
+</table>
+<A NAME="ugroup"></A>
+<div class="objectname">Entity: ugroup</div>
+<div class="details">Entity details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata">Table with names of user groups</td></tr>
+<tr><td class="fieldname">Primary key constraint name</td><td class="fielddata">PK_user_group</td></tr>
+</table>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td class="fieldname">Key</td><td class="fieldname">Attribute name</td><td class="fieldname">Data type</td><td class="fieldname">Not null</td><td class="fieldname">Description</td></tr>
+<tr><td class="fielddata">PK</td><td class="fielddata">id</td><td class="fielddata">SERIAL</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">title</td><td class="fielddata">CHARACTER VARYING</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="usession"></A>
+<div class="objectname">Entity: usession</div>
+<div class="details">Entity details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key constraint name</td><td class="fielddata">PK_usession</td></tr>
+</table>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td class="fieldname">Key</td><td class="fieldname">Attribute name</td><td class="fieldname">Data type</td><td class="fieldname">Not null</td><td class="fieldname">Description</td></tr>
+<tr><td class="fielddata">PK</td><td class="fielddata">id</td><td class="fielddata">SERIAL</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">sid</td><td class="fielddata">CHARACTER VARYING</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">sstart</td><td class="fielddata">TIMESTAMP</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata">FK</td><td class="fielddata">fk_usr_id</td><td class="fielddata">INTEGER</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">send</td><td class="fielddata">TIMESTAMP</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="usr"></A>
+<div class="objectname">Entity: usr</div>
+<div class="details">Entity details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata">User profiles</td></tr>
+<tr><td class="fieldname">Primary key constraint name</td><td class="fielddata">PK_usr</td></tr>
+</table>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td class="fieldname">Key</td><td class="fieldname">Attribute name</td><td class="fieldname">Data type</td><td class="fieldname">Not null</td><td class="fieldname">Description</td></tr>
+<tr><td class="fielddata">PK</td><td class="fielddata">id</td><td class="fielddata">SERIAL</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata">FK</td><td class="fielddata">fk_cog_style_id</td><td class="fielddata">INTEGER</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">uri</td><td class="fielddata">CHARACTER VARYING</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">usr</td><td class="fielddata">CHARACTER VARYING</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">pwd</td><td class="fielddata">CHARACTER VARYING</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">email</td><td class="fielddata">CHARACTER VARYING</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">openid</td><td class="fielddata">BOOLEAN</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">isdeleted</td><td class="fielddata">BOOLEAN</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">tstamp</td><td class="fielddata">TIMESTAMP WITH TIME ZONE</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="usr_ugroup"></A>
+<div class="objectname">Entity: usr_ugroup</div>
+<div class="details">Entity details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata">Many-to-many relationship table between users and user groups.</td></tr>
+<tr><td class="fieldname">Primary key constraint name</td><td class="fielddata">PK_usr_ugroup</td></tr>
+</table>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td class="fieldname">Key</td><td class="fieldname">Attribute name</td><td class="fieldname">Data type</td><td class="fieldname">Not null</td><td class="fieldname">Description</td></tr>
+<tr><td class="fielddata">PK</td><td class="fielddata">id</td><td class="fielddata">SERIAL</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata">FK</td><td class="fielddata">fk_usr_id</td><td class="fielddata">INTEGER</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata">FK</td><td class="fielddata">fk_ugroup_id</td><td class="fielddata">INTEGER</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="workspace"></A>
+<div class="objectname">Entity: workspace</div>
+<div class="details">Entity details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata">Temporary storage table for half-baked nodes and items that a user wants to add to PATHS at a later stage after working on them.</td></tr>
+<tr><td class="fieldname">Primary key constraint name</td><td class="fielddata">PK_workspace</td></tr>
+</table>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td class="fieldname">Key</td><td class="fieldname">Attribute name</td><td class="fieldname">Data type</td><td class="fieldname">Not null</td><td class="fieldname">Description</td></tr>
+<tr><td class="fielddata">PK</td><td class="fielddata">id</td><td class="fielddata">SERIAL</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata">FK</td><td class="fielddata">fk_usr_id</td><td class="fielddata">INTEGER</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">fk_rel_uri</td><td class="fielddata">CHARACTER VARYING</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">dc_title</td><td class="fielddata">CHARACTER VARYING</td><td class="fielddata">Yes</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">dc_description</td><td class="fielddata">TEXT</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+<tr><td class="fielddata"></td><td class="fielddata">type</td><td class="fielddata">CHARACTER VARYING</td><td class="fielddata">No</td><td class="fielddata"></td></tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>

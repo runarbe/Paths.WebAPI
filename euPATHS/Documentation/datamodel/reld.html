@@ -1,0 +1,329 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html";>
+<meta name="keywords" content="DeZign for Databases - HTML Report">
+<meta name="author" content="Datanamic - www.datanamic.com">
+<title>DeZign for Databases v5.2 - HTML Report</title>
+<link rel="stylesheet" type="text/css" media="screen,print" href="dezign.css" title="report">
+</head>
+<body bgcolor="#FFFFFF" leftmargin="20" topmargin="10" marginwidth="20" marginheight="10">
+<div class="top">Logical model</div>
+<ul id="menu">
+<li><a href="index.html">Project details</a></li>
+<li><a href="erdiagram.html">ER diagram</a></li>
+<li><a href="entl.html">Entities</a></li>
+<li><a href="rell.html">Relationships</a></li>
+</ul>
+<div class="row">
+<div class="tab"><a href="rell.html">List of relationships</a></div>
+<div class="activetab">Relationship details</div>
+</div>
+<table width=90% border=0 cellSpacing=0 cellPadding=0 class="chapter">
+<tr>
+<td class="right" valign=top>
+<A NAME="cog_style_puser"></A>
+<div class="objectname">Relationship: cog_style_puser</div>
+<div class="details">Relationship details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Type</td><td class="fielddata">Non Identifying</td></tr>
+<tr><td class="fieldname">Cardinality</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fieldname">Parent</td><td class="fielddata">cog_style (id)</td></tr>
+<tr><td class="fieldname">Child</td><td class="fielddata">usr (fk_cog_style_id)</td></tr>
+<tr><td class="fieldname">Update rule</td><td class="fielddata">None</td></tr>
+<tr><td class="fieldname">Delete rule</td><td class="fielddata">None</td></tr>
+</table>
+<A NAME="item_item_link"></A>
+<div class="objectname">Relationship: item_item_link</div>
+<div class="details">Relationship details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Type</td><td class="fielddata">Non Identifying</td></tr>
+<tr><td class="fieldname">Cardinality</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fieldname">Parent</td><td class="fielddata">item (uri)</td></tr>
+<tr><td class="fieldname">Child</td><td class="fielddata">item_link (fk_rel_uri)</td></tr>
+<tr><td class="fieldname">Update rule</td><td class="fielddata">None</td></tr>
+<tr><td class="fieldname">Delete rule</td><td class="fielddata">None</td></tr>
+</table>
+<A NAME="item_item_topic"></A>
+<div class="objectname">Relationship: item_item_topic</div>
+<div class="details">Relationship details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Type</td><td class="fielddata">Non Identifying</td></tr>
+<tr><td class="fieldname">Cardinality</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fieldname">Parent</td><td class="fielddata">item (id)</td></tr>
+<tr><td class="fieldname">Child</td><td class="fielddata">item_topic (fk_item_id)</td></tr>
+<tr><td class="fieldname">Update rule</td><td class="fielddata">None</td></tr>
+<tr><td class="fieldname">Delete rule</td><td class="fielddata">None</td></tr>
+</table>
+<A NAME="item_node"></A>
+<div class="objectname">Relationship: item_node</div>
+<div class="details">Relationship details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Type</td><td class="fielddata">Non Identifying</td></tr>
+<tr><td class="fieldname">Cardinality</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fieldname">Parent</td><td class="fielddata">item (uri)</td></tr>
+<tr><td class="fieldname">Child</td><td class="fielddata">node (fk_rel_uri)</td></tr>
+<tr><td class="fieldname">Update rule</td><td class="fielddata">None</td></tr>
+<tr><td class="fieldname">Delete rule</td><td class="fielddata">None</td></tr>
+</table>
+<A NAME="node_link_tnode"></A>
+<div class="objectname">Relationship: node_link_tnode</div>
+<div class="details">Relationship details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Type</td><td class="fielddata">Identifying</td></tr>
+<tr><td class="fieldname">Cardinality</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fieldname">Parent</td><td class="fielddata">node (id)</td></tr>
+<tr><td class="fieldname">Child</td><td class="fielddata">node_link (fk_tnode_id)</td></tr>
+<tr><td class="fieldname">Update rule</td><td class="fielddata">None</td></tr>
+<tr><td class="fieldname">Delete rule</td><td class="fielddata">None</td></tr>
+</table>
+<A NAME="node_link_type_node_link"></A>
+<div class="objectname">Relationship: node_link_type_node_link</div>
+<div class="details">Relationship details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Type</td><td class="fielddata">Non Identifying</td></tr>
+<tr><td class="fieldname">Cardinality</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fieldname">Parent</td><td class="fielddata">node_link_type (id)</td></tr>
+<tr><td class="fieldname">Child</td><td class="fielddata">node_link (fk_node_link_type_id)</td></tr>
+<tr><td class="fieldname">Update rule</td><td class="fielddata">None</td></tr>
+<tr><td class="fieldname">Delete rule</td><td class="fielddata">None</td></tr>
+</table>
+<A NAME="path_node"></A>
+<div class="objectname">Relationship: path_node</div>
+<div class="details">Relationship details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Type</td><td class="fielddata">Identifying</td></tr>
+<tr><td class="fieldname">Cardinality</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fieldname">Parent</td><td class="fielddata">path (id)</td></tr>
+<tr><td class="fieldname">Child</td><td class="fielddata">node (id)</td></tr>
+<tr><td class="fieldname">Update rule</td><td class="fielddata">None</td></tr>
+<tr><td class="fieldname">Delete rule</td><td class="fielddata">None</td></tr>
+</table>
+<A NAME="puser_comment"></A>
+<div class="objectname">Relationship: puser_comment</div>
+<div class="details">Relationship details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Type</td><td class="fielddata">Non Identifying</td></tr>
+<tr><td class="fieldname">Cardinality</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fieldname">Parent</td><td class="fielddata">usr (id)</td></tr>
+<tr><td class="fieldname">Child</td><td class="fielddata">comment (fk_usr_id)</td></tr>
+<tr><td class="fieldname">Update rule</td><td class="fielddata">None</td></tr>
+<tr><td class="fieldname">Delete rule</td><td class="fielddata">None</td></tr>
+</table>
+<A NAME="puser_path"></A>
+<div class="objectname">Relationship: puser_path</div>
+<div class="details">Relationship details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Type</td><td class="fielddata">Non Identifying</td></tr>
+<tr><td class="fieldname">Cardinality</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fieldname">Parent</td><td class="fielddata">usr (id)</td></tr>
+<tr><td class="fieldname">Child</td><td class="fielddata">path (fk_user_id)</td></tr>
+<tr><td class="fieldname">Update rule</td><td class="fielddata">None</td></tr>
+<tr><td class="fieldname">Delete rule</td><td class="fielddata">None</td></tr>
+</table>
+<A NAME="puser_rating"></A>
+<div class="objectname">Relationship: puser_rating</div>
+<div class="details">Relationship details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Type</td><td class="fielddata">Identifying</td></tr>
+<tr><td class="fieldname">Cardinality</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fieldname">Parent</td><td class="fielddata">usr (id)</td></tr>
+<tr><td class="fieldname">Child</td><td class="fielddata">rating (fk_usr_id)</td></tr>
+<tr><td class="fieldname">Update rule</td><td class="fielddata">None</td></tr>
+<tr><td class="fieldname">Delete rule</td><td class="fielddata">None</td></tr>
+</table>
+<A NAME="puser_tagging"></A>
+<div class="objectname">Relationship: puser_tagging</div>
+<div class="details">Relationship details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Type</td><td class="fielddata">Non Identifying</td></tr>
+<tr><td class="fieldname">Cardinality</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fieldname">Parent</td><td class="fielddata">usr (id)</td></tr>
+<tr><td class="fieldname">Child</td><td class="fielddata">tagging (fk_usr_id)</td></tr>
+<tr><td class="fieldname">Update rule</td><td class="fielddata">None</td></tr>
+<tr><td class="fieldname">Delete rule</td><td class="fielddata">None</td></tr>
+</table>
+<A NAME="puser_usession"></A>
+<div class="objectname">Relationship: puser_usession</div>
+<div class="details">Relationship details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Type</td><td class="fielddata">Non Identifying</td></tr>
+<tr><td class="fieldname">Cardinality</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fieldname">Parent</td><td class="fielddata">usr (id)</td></tr>
+<tr><td class="fieldname">Child</td><td class="fielddata">usession (fk_usr_id)</td></tr>
+<tr><td class="fieldname">Update rule</td><td class="fielddata">None</td></tr>
+<tr><td class="fieldname">Delete rule</td><td class="fielddata">None</td></tr>
+</table>
+<A NAME="rating_scale_rating"></A>
+<div class="objectname">Relationship: rating_scale_rating</div>
+<div class="details">Relationship details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Type</td><td class="fielddata">Identifying</td></tr>
+<tr><td class="fieldname">Cardinality</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fieldname">Parent</td><td class="fielddata">rating_scale (id)</td></tr>
+<tr><td class="fieldname">Child</td><td class="fielddata">rating (fk_rating_scale_id)</td></tr>
+<tr><td class="fieldname">Update rule</td><td class="fielddata">None</td></tr>
+<tr><td class="fieldname">Delete rule</td><td class="fielddata">None</td></tr>
+</table>
+<A NAME="similar_sitem"></A>
+<div class="objectname">Relationship: similar_sitem</div>
+<div class="details">Relationship details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Type</td><td class="fielddata">Non Identifying</td></tr>
+<tr><td class="fieldname">Cardinality</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fieldname">Parent</td><td class="fielddata">item (id)</td></tr>
+<tr><td class="fieldname">Child</td><td class="fielddata">item_similarity (fk_sitem_id)</td></tr>
+<tr><td class="fieldname">Update rule</td><td class="fielddata">None</td></tr>
+<tr><td class="fieldname">Delete rule</td><td class="fielddata">None</td></tr>
+</table>
+<A NAME="similar_titem"></A>
+<div class="objectname">Relationship: similar_titem</div>
+<div class="details">Relationship details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Type</td><td class="fielddata">Non Identifying</td></tr>
+<tr><td class="fieldname">Cardinality</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fieldname">Parent</td><td class="fielddata">item (id)</td></tr>
+<tr><td class="fieldname">Child</td><td class="fielddata">item_similarity (fk_titem_id)</td></tr>
+<tr><td class="fieldname">Update rule</td><td class="fielddata">None</td></tr>
+<tr><td class="fieldname">Delete rule</td><td class="fielddata">None</td></tr>
+</table>
+<A NAME="sitem_behaviour_link"></A>
+<div class="objectname">Relationship: sitem_behaviour_link</div>
+<div class="details">Relationship details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Type</td><td class="fielddata">Non Identifying</td></tr>
+<tr><td class="fieldname">Cardinality</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fieldname">Parent</td><td class="fielddata">item (uri)</td></tr>
+<tr><td class="fieldname">Child</td><td class="fielddata">behaviour_link (fk_rel_suri)</td></tr>
+<tr><td class="fieldname">Update rule</td><td class="fielddata">None</td></tr>
+<tr><td class="fieldname">Delete rule</td><td class="fielddata">None</td></tr>
+</table>
+<A NAME="snode_node_link"></A>
+<div class="objectname">Relationship: snode_node_link</div>
+<div class="details">Relationship details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Type</td><td class="fielddata">Identifying</td></tr>
+<tr><td class="fieldname">Cardinality</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fieldname">Parent</td><td class="fielddata">node (id)</td></tr>
+<tr><td class="fieldname">Child</td><td class="fielddata">node_link (fk_snode_id)</td></tr>
+<tr><td class="fieldname">Update rule</td><td class="fielddata">None</td></tr>
+<tr><td class="fieldname">Delete rule</td><td class="fielddata">None</td></tr>
+</table>
+<A NAME="tag_tagging"></A>
+<div class="objectname">Relationship: tag_tagging</div>
+<div class="details">Relationship details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Type</td><td class="fielddata">Non Identifying</td></tr>
+<tr><td class="fieldname">Cardinality</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fieldname">Parent</td><td class="fielddata">tag (id)</td></tr>
+<tr><td class="fieldname">Child</td><td class="fielddata">tagging (fk_tag_id)</td></tr>
+<tr><td class="fieldname">Update rule</td><td class="fielddata">None</td></tr>
+<tr><td class="fieldname">Delete rule</td><td class="fielddata">None</td></tr>
+</table>
+<A NAME="titem_behaviour_link"></A>
+<div class="objectname">Relationship: titem_behaviour_link</div>
+<div class="details">Relationship details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Type</td><td class="fielddata">Non Identifying</td></tr>
+<tr><td class="fieldname">Cardinality</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fieldname">Parent</td><td class="fielddata">item (uri)</td></tr>
+<tr><td class="fieldname">Child</td><td class="fielddata">behaviour_link (fk_rel_turi)</td></tr>
+<tr><td class="fieldname">Update rule</td><td class="fielddata">None</td></tr>
+<tr><td class="fieldname">Delete rule</td><td class="fielddata">None</td></tr>
+</table>
+<A NAME="topic_item_topic"></A>
+<div class="objectname">Relationship: topic_item_topic</div>
+<div class="details">Relationship details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Type</td><td class="fielddata">Non Identifying</td></tr>
+<tr><td class="fieldname">Cardinality</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fieldname">Parent</td><td class="fielddata">topic (id)</td></tr>
+<tr><td class="fieldname">Child</td><td class="fielddata">item_topic (fk_topic_id)</td></tr>
+<tr><td class="fieldname">Update rule</td><td class="fielddata">None</td></tr>
+<tr><td class="fieldname">Delete rule</td><td class="fielddata">None</td></tr>
+</table>
+<A NAME="topic_topic"></A>
+<div class="objectname">Relationship: topic_topic</div>
+<div class="details">Relationship details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Type</td><td class="fielddata">Non Identifying</td></tr>
+<tr><td class="fieldname">Cardinality</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fieldname">Parent</td><td class="fielddata">topic (id)</td></tr>
+<tr><td class="fieldname">Child</td><td class="fielddata">topic (fk_parent_topic_id)</td></tr>
+<tr><td class="fieldname">Update rule</td><td class="fielddata">None</td></tr>
+<tr><td class="fieldname">Delete rule</td><td class="fielddata">None</td></tr>
+</table>
+<A NAME="ugroup_usr_ugroup"></A>
+<div class="objectname">Relationship: ugroup_usr_ugroup</div>
+<div class="details">Relationship details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Type</td><td class="fielddata">Non Identifying</td></tr>
+<tr><td class="fieldname">Cardinality</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fieldname">Parent</td><td class="fielddata">ugroup (id)</td></tr>
+<tr><td class="fieldname">Child</td><td class="fielddata">usr_ugroup (fk_ugroup_id)</td></tr>
+<tr><td class="fieldname">Update rule</td><td class="fielddata">None</td></tr>
+<tr><td class="fieldname">Delete rule</td><td class="fielddata">None</td></tr>
+</table>
+<A NAME="usession_ubehaviour"></A>
+<div class="objectname">Relationship: usession_ubehaviour</div>
+<div class="details">Relationship details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Type</td><td class="fielddata">Non Identifying</td></tr>
+<tr><td class="fieldname">Cardinality</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fieldname">Parent</td><td class="fielddata">usession (id)</td></tr>
+<tr><td class="fieldname">Child</td><td class="fielddata">ubehaviour (fk_usession_id)</td></tr>
+<tr><td class="fieldname">Update rule</td><td class="fielddata">None</td></tr>
+<tr><td class="fieldname">Delete rule</td><td class="fielddata">None</td></tr>
+</table>
+<A NAME="usr_usr_ugroup"></A>
+<div class="objectname">Relationship: usr_usr_ugroup</div>
+<div class="details">Relationship details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Type</td><td class="fielddata">Non Identifying</td></tr>
+<tr><td class="fieldname">Cardinality</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fieldname">Parent</td><td class="fielddata">usr (id)</td></tr>
+<tr><td class="fieldname">Child</td><td class="fielddata">usr_ugroup (fk_usr_id)</td></tr>
+<tr><td class="fieldname">Update rule</td><td class="fielddata">None</td></tr>
+<tr><td class="fieldname">Delete rule</td><td class="fielddata">None</td></tr>
+</table>
+<A NAME="usr_workspace"></A>
+<div class="objectname">Relationship: usr_workspace</div>
+<div class="details">Relationship details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=20% class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Type</td><td class="fielddata">Non Identifying</td></tr>
+<tr><td class="fieldname">Cardinality</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fieldname">Parent</td><td class="fielddata">usr (id)</td></tr>
+<tr><td class="fieldname">Child</td><td class="fielddata">workspace (fk_usr_id)</td></tr>
+<tr><td class="fieldname">Update rule</td><td class="fielddata">None</td></tr>
+<tr><td class="fieldname">Delete rule</td><td class="fielddata">None</td></tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>

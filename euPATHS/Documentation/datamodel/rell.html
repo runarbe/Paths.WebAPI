@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html";>
+<meta name="keywords" content="DeZign for Databases - HTML Report">
+<meta name="author" content="Datanamic - www.datanamic.com">
+<title>DeZign for Databases v5.2 - HTML Report</title>
+<link rel="stylesheet" type="text/css" media="screen,print" href="dezign.css" title="report">
+</head>
+<body bgcolor="#FFFFFF" leftmargin="20" topmargin="10" marginwidth="20" marginheight="10">
+<div class="top">Logical model</div>
+<ul id="menu">
+<li><a href="index.html">Project details</a></li>
+<li><a href="erdiagram.html">ER diagram</a></li>
+<li><a href="entl.html">Entities</a></li>
+<li><a href="rell.html">Relationships</a></li>
+</ul>
+<div class="row">
+<div class="activetab">List of relationships</div>
+<div class="tab"><a href="reld.html">Relationship details</a></div>
+</div>
+<table width=90% border=0 cellSpacing=0 cellPadding=0 class="chapter">
+<tr>
+<td class="right" valign=top>
+<table width="100%" border=0 class="detailstable">
+<tr><td class="fieldname">Relationship name</td><td class="fieldname">Type</td><td class="fieldname">Parent entity</td><td class="fieldname">Child entity</td><td class="fieldname">Cardinality</td></tr>
+<tr><td class="fielddata">cog_style_puser</td><td class="fielddata">Non Identifying</td><td class="fielddata">cog_style</td><td class="fielddata">usr</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fielddata">item_item_link</td><td class="fielddata">Non Identifying</td><td class="fielddata">item</td><td class="fielddata">item_link</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fielddata">item_item_topic</td><td class="fielddata">Non Identifying</td><td class="fielddata">item</td><td class="fielddata">item_topic</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fielddata">item_node</td><td class="fielddata">Non Identifying</td><td class="fielddata">item</td><td class="fielddata">node</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fielddata">node_link_tnode</td><td class="fielddata">Identifying</td><td class="fielddata">node</td><td class="fielddata">node_link</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fielddata">node_link_type_node_link</td><td class="fielddata">Non Identifying</td><td class="fielddata">node_link_type</td><td class="fielddata">node_link</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fielddata">path_node</td><td class="fielddata">Identifying</td><td class="fielddata">path</td><td class="fielddata">node</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fielddata">puser_comment</td><td class="fielddata">Non Identifying</td><td class="fielddata">usr</td><td class="fielddata">comment</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fielddata">puser_path</td><td class="fielddata">Non Identifying</td><td class="fielddata">usr</td><td class="fielddata">path</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fielddata">puser_rating</td><td class="fielddata">Identifying</td><td class="fielddata">usr</td><td class="fielddata">rating</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fielddata">puser_tagging</td><td class="fielddata">Non Identifying</td><td class="fielddata">usr</td><td class="fielddata">tagging</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fielddata">puser_usession</td><td class="fielddata">Non Identifying</td><td class="fielddata">usr</td><td class="fielddata">usession</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fielddata">rating_scale_rating</td><td class="fielddata">Identifying</td><td class="fielddata">rating_scale</td><td class="fielddata">rating</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fielddata">similar_sitem</td><td class="fielddata">Non Identifying</td><td class="fielddata">item</td><td class="fielddata">item_similarity</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fielddata">similar_titem</td><td class="fielddata">Non Identifying</td><td class="fielddata">item</td><td class="fielddata">item_similarity</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fielddata">sitem_behaviour_link</td><td class="fielddata">Non Identifying</td><td class="fielddata">item</td><td class="fielddata">behaviour_link</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fielddata">snode_node_link</td><td class="fielddata">Identifying</td><td class="fielddata">node</td><td class="fielddata">node_link</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fielddata">tag_tagging</td><td class="fielddata">Non Identifying</td><td class="fielddata">tag</td><td class="fielddata">tagging</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fielddata">titem_behaviour_link</td><td class="fielddata">Non Identifying</td><td class="fielddata">item</td><td class="fielddata">behaviour_link</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fielddata">topic_item_topic</td><td class="fielddata">Non Identifying</td><td class="fielddata">topic</td><td class="fielddata">item_topic</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fielddata">topic_topic</td><td class="fielddata">Non Identifying</td><td class="fielddata">topic</td><td class="fielddata">topic</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fielddata">ugroup_usr_ugroup</td><td class="fielddata">Non Identifying</td><td class="fielddata">ugroup</td><td class="fielddata">usr_ugroup</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fielddata">usession_ubehaviour</td><td class="fielddata">Non Identifying</td><td class="fielddata">usession</td><td class="fielddata">ubehaviour</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fielddata">usr_usr_ugroup</td><td class="fielddata">Non Identifying</td><td class="fielddata">usr</td><td class="fielddata">usr_ugroup</td><td class="fielddata">Zero Or More</td></tr>
+<tr><td class="fielddata">usr_workspace</td><td class="fielddata">Non Identifying</td><td class="fielddata">usr</td><td class="fielddata">workspace</td><td class="fielddata">Zero Or More</td></tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>

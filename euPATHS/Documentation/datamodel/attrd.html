@@ -1,0 +1,2702 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html";>
+<meta name="keywords" content="DeZign for Databases - HTML Report">
+<meta name="author" content="Datanamic - www.datanamic.com">
+<title>DeZign for Databases v5.2 - HTML Report</title>
+<link rel="stylesheet" type="text/css" media="screen,print" href="dezign.css" title="report">
+</head>
+<body bgcolor="#FFFFFF" leftmargin="20" topmargin="10" marginwidth="20" marginheight="10">
+<div class="top">Logical model</div>
+<ul id="menu">
+<li><a href="index.html">Project details</a></li>
+<li><a href="erdiagram.html">ER diagram</a></li>
+<li><a href="entl.html">Entities</a></li>
+<li><a href="attrl.html">Attributes</a></li>
+<li><a href="rell.html">Relationships</a></li>
+<li><a href="doml.html">Domains</a></li>
+<li><a href="viewl.html">Views</a></li>
+<li><a href="procl.html">Procedures</a></li>
+<li><a href="seql.html">Sequences</a></li>
+</ul>
+<div class="row">
+<div class="tab"><a href="attrl.html">List of attributes</a></div>
+<div class="activetab">Attribute details</div>
+</div>
+<table width=90% border=0 cellSpacing=0 cellPadding=0 class="chapter">
+<tr>
+<td class="left" valign=top>
+<ul id="objectbrowser">
+<li><a href="#access">access</a></li>
+<li><a href="#avg_ttime">avg_ttime</a></li>
+<li><a href="#comment">comment</a></li>
+<li><a href="#confidence">confidence</a></li>
+<li><a href="#confidence">confidence</a></li>
+<li><a href="#dcterms_ispartof">dcterms_ispartof</a></li>
+<li><a href="#dcterms_provenance">dcterms_provenance</a></li>
+<li><a href="#dcterms_spatial">dcterms_spatial</a></li>
+<li><a href="#dcterms_temporal">dcterms_temporal</a></li>
+<li><a href="#dc_contributor">dc_contributor</a></li>
+<li><a href="#dc_coverage">dc_coverage</a></li>
+<li><a href="#dc_creator">dc_creator</a></li>
+<li><a href="#dc_date">dc_date</a></li>
+<li><a href="#dc_description">dc_description</a></li>
+<li><a href="#dc_description">dc_description</a></li>
+<li><a href="#dc_description">dc_description</a></li>
+<li><a href="#dc_description">dc_description</a></li>
+<li><a href="#dc_description">dc_description</a></li>
+<li><a href="#dc_format">dc_format</a></li>
+<li><a href="#dc_identifier">dc_identifier</a></li>
+<li><a href="#dc_language">dc_language</a></li>
+<li><a href="#dc_publisher">dc_publisher</a></li>
+<li><a href="#dc_relation">dc_relation</a></li>
+<li><a href="#dc_rights">dc_rights</a></li>
+<li><a href="#dc_rights">dc_rights</a></li>
+<li><a href="#dc_source">dc_source</a></li>
+<li><a href="#dc_subject">dc_subject</a></li>
+<li><a href="#dc_subject">dc_subject</a></li>
+<li><a href="#dc_subject">dc_subject</a></li>
+<li><a href="#dc_title">dc_title</a></li>
+<li><a href="#dc_title">dc_title</a></li>
+<li><a href="#dc_title">dc_title</a></li>
+<li><a href="#dc_title">dc_title</a></li>
+<li><a href="#dc_title">dc_title</a></li>
+<li><a href="#dc_type">dc_type</a></li>
+<li><a href="#email">email</a></li>
+<li><a href="#end_offset">end_offset</a></li>
+<li><a href="#europeana_country">europeana_country</a></li>
+<li><a href="#europeana_dataprovider">europeana_dataprovider</a></li>
+<li><a href="#europeana_hasobject">europeana_hasobject</a></li>
+<li><a href="#europeana_isshownat">europeana_isshownat</a></li>
+<li><a href="#europeana_isshownby">europeana_isshownby</a></li>
+<li><a href="#europeana_language">europeana_language</a></li>
+<li><a href="#europeana_object">europeana_object</a></li>
+<li><a href="#europeana_previewNoDistribute">europeana_previewNoDistribute</a></li>
+<li><a href="#europeana_provider">europeana_provider</a></li>
+<li><a href="#europeana_rights">europeana_rights</a></li>
+<li><a href="#europeana_type">europeana_type</a></li>
+<li><a href="#europeana_unstored">europeana_unstored</a></li>
+<li><a href="#europeana_uri">europeana_uri</a></li>
+<li><a href="#europeana_usertag">europeana_usertag</a></li>
+<li><a href="#europeana_year">europeana_year</a></li>
+<li><a href="#field">field</a></li>
+<li><a href="#fk_cog_style_id">fk_cog_style_id</a></li>
+<li><a href="#fk_item_id">fk_item_id</a></li>
+<li><a href="#fk_node_link_type_id">fk_node_link_type_id</a></li>
+<li><a href="#fk_parent_topic_id">fk_parent_topic_id</a></li>
+<li><a href="#fk_rating_scale_id">fk_rating_scale_id</a></li>
+<li><a href="#fk_rel_suri">fk_rel_suri</a></li>
+<li><a href="#fk_rel_suri">fk_rel_suri</a></li>
+<li><a href="#fk_rel_turi">fk_rel_turi</a></li>
+<li><a href="#fk_rel_turi">fk_rel_turi</a></li>
+<li><a href="#fk_rel_uri">fk_rel_uri</a></li>
+<li><a href="#fk_rel_uri">fk_rel_uri</a></li>
+<li><a href="#fk_rel_uri">fk_rel_uri</a></li>
+<li><a href="#fk_rel_uri">fk_rel_uri</a></li>
+<li><a href="#fk_rel_uri">fk_rel_uri</a></li>
+<li><a href="#fk_rel_uri">fk_rel_uri</a></li>
+<li><a href="#fk_sitem_id">fk_sitem_id</a></li>
+<li><a href="#fk_snode_id">fk_snode_id</a></li>
+<li><a href="#fk_tag_id">fk_tag_id</a></li>
+<li><a href="#fk_titem_id">fk_titem_id</a></li>
+<li><a href="#fk_tnode_id">fk_tnode_id</a></li>
+<li><a href="#fk_topic_id">fk_topic_id</a></li>
+<li><a href="#fk_ugroup_id">fk_ugroup_id</a></li>
+<li><a href="#fk_user_id">fk_user_id</a></li>
+<li><a href="#fk_usession_id">fk_usession_id</a></li>
+<li><a href="#fk_usr_id">fk_usr_id</a></li>
+<li><a href="#fk_usr_id">fk_usr_id</a></li>
+<li><a href="#fk_usr_id">fk_usr_id</a></li>
+<li><a href="#fk_usr_id">fk_usr_id</a></li>
+<li><a href="#fk_usr_id">fk_usr_id</a></li>
+<li><a href="#fk_usr_id">fk_usr_id</a></li>
+<li><a href="#id">id</a></li>
+<li><a href="#id">id</a></li>
+<li><a href="#id">id</a></li>
+<li><a href="#id">id</a></li>
+<li><a href="#id">id</a></li>
+<li><a href="#id">id</a></li>
+<li><a href="#id">id</a></li>
+<li><a href="#id">id</a></li>
+<li><a href="#id">id</a></li>
+<li><a href="#id">id</a></li>
+<li><a href="#id">id</a></li>
+<li><a href="#id">id</a></li>
+<li><a href="#id">id</a></li>
+<li><a href="#id">id</a></li>
+<li><a href="#id">id</a></li>
+<li><a href="#id">id</a></li>
+<li><a href="#id">id</a></li>
+<li><a href="#id">id</a></li>
+<li><a href="#id">id</a></li>
+<li><a href="#id">id</a></li>
+<li><a href="#id">id</a></li>
+<li><a href="#id">id</a></li>
+<li><a href="#idxfti">idxfti</a></li>
+<li><a href="#isdeleted">isdeleted</a></li>
+<li><a href="#isdeleted">isdeleted</a></li>
+<li><a href="#isdeleted">isdeleted</a></li>
+<li><a href="#isdeleted">isdeleted</a></li>
+<li><a href="#isdeleted">isdeleted</a></li>
+<li><a href="#isdeleted">isdeleted</a></li>
+<li><a href="#label">label</a></li>
+<li><a href="#label">label</a></li>
+<li><a href="#lang">lang</a></li>
+<li><a href="#link">link</a></li>
+<li><a href="#lom_audience">lom_audience</a></li>
+<li><a href="#lom_length">lom_length</a></li>
+<li><a href="#method">method</a></li>
+<li><a href="#openid">openid</a></li>
+<li><a href="#pwd">pwd</a></li>
+<li><a href="#send">send</a></li>
+<li><a href="#sentiment">sentiment</a></li>
+<li><a href="#sentiment">sentiment</a></li>
+<li><a href="#sid">sid</a></li>
+<li><a href="#source">source</a></li>
+<li><a href="#sstart">sstart</a></li>
+<li><a href="#start_offset">start_offset</a></li>
+<li><a href="#stime">stime</a></li>
+<li><a href="#title">title</a></li>
+<li><a href="#title">title</a></li>
+<li><a href="#title">title</a></li>
+<li><a href="#topic_thumbnails">topic_thumbnails</a></li>
+<li><a href="#trav_count">trav_count</a></li>
+<li><a href="#trav_count">trav_count</a></li>
+<li><a href="#tstamp">tstamp</a></li>
+<li><a href="#tstamp">tstamp</a></li>
+<li><a href="#tstamp">tstamp</a></li>
+<li><a href="#tstamp">tstamp</a></li>
+<li><a href="#type">type</a></li>
+<li><a href="#type">type</a></li>
+<li><a href="#uri">uri</a></li>
+<li><a href="#uri">uri</a></li>
+<li><a href="#uri">uri</a></li>
+<li><a href="#uri">uri</a></li>
+<li><a href="#uri">uri</a></li>
+<li><a href="#uri">uri</a></li>
+<li><a href="#usr">usr</a></li>
+</ul>
+</td>
+<td class="right" valign=top>
+<A NAME="access"></A>
+<div class="objectname">Attribute: access</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#path">path</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER VARYING</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="avg_ttime"></A>
+<div class="objectname">Attribute: avg_ttime</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#behaviour_link">behaviour_link</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata">Average time at target URI in seconds</td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">INTEGER</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="comment"></A>
+<div class="objectname">Attribute: comment</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#comment">comment</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata">TEXT</td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TEXT</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="confidence"></A>
+<div class="objectname">Attribute: confidence</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item_similarity">item_similarity</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">NUMERIC</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="confidence"></A>
+<div class="objectname">Attribute: confidence</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item_link">item_link</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">NUMERIC</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="dcterms_ispartof"></A>
+<div class="objectname">Attribute: dcterms_ispartof</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item">item</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TEXT</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="dcterms_provenance"></A>
+<div class="objectname">Attribute: dcterms_provenance</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item">item</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TEXT</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="dcterms_spatial"></A>
+<div class="objectname">Attribute: dcterms_spatial</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item">item</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TEXT</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="dcterms_temporal"></A>
+<div class="objectname">Attribute: dcterms_temporal</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item">item</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TEXT</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="dc_contributor"></A>
+<div class="objectname">Attribute: dc_contributor</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item">item</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TEXT</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="dc_coverage"></A>
+<div class="objectname">Attribute: dc_coverage</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item">item</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TEXT</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="dc_creator"></A>
+<div class="objectname">Attribute: dc_creator</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item">item</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TEXT</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="dc_date"></A>
+<div class="objectname">Attribute: dc_date</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item">item</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TEXT</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="dc_description"></A>
+<div class="objectname">Attribute: dc_description</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#workspace">workspace</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TEXT</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="dc_description"></A>
+<div class="objectname">Attribute: dc_description</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#topic">topic</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TEXT</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="dc_description"></A>
+<div class="objectname">Attribute: dc_description</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#node">node</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TEXT</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="dc_description"></A>
+<div class="objectname">Attribute: dc_description</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#path">path</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TEXT</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="dc_description"></A>
+<div class="objectname">Attribute: dc_description</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item">item</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TEXT</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="dc_format"></A>
+<div class="objectname">Attribute: dc_format</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item">item</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TEXT</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="dc_identifier"></A>
+<div class="objectname">Attribute: dc_identifier</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item">item</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER VARYING</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="dc_language"></A>
+<div class="objectname">Attribute: dc_language</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item">item</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TEXT</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="dc_publisher"></A>
+<div class="objectname">Attribute: dc_publisher</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item">item</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TEXT</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="dc_relation"></A>
+<div class="objectname">Attribute: dc_relation</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item">item</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TEXT</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="dc_rights"></A>
+<div class="objectname">Attribute: dc_rights</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item">item</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TEXT</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="dc_rights"></A>
+<div class="objectname">Attribute: dc_rights</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#path">path</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER VARYING</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="dc_source"></A>
+<div class="objectname">Attribute: dc_source</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item">item</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TEXT</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="dc_subject"></A>
+<div class="objectname">Attribute: dc_subject</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#topic">topic</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER VARYING</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="dc_subject"></A>
+<div class="objectname">Attribute: dc_subject</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#path">path</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER VARYING</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="dc_subject"></A>
+<div class="objectname">Attribute: dc_subject</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item">item</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TEXT</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="dc_title"></A>
+<div class="objectname">Attribute: dc_title</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#workspace">workspace</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER VARYING</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="dc_title"></A>
+<div class="objectname">Attribute: dc_title</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#topic">topic</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER VARYING</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="dc_title"></A>
+<div class="objectname">Attribute: dc_title</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#node">node</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER VARYING</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="dc_title"></A>
+<div class="objectname">Attribute: dc_title</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#path">path</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER VARYING</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="dc_title"></A>
+<div class="objectname">Attribute: dc_title</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item">item</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TEXT</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="dc_type"></A>
+<div class="objectname">Attribute: dc_type</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item">item</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TEXT</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="email"></A>
+<div class="objectname">Attribute: email</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#usr">usr</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER VARYING</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="end_offset"></A>
+<div class="objectname">Attribute: end_offset</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item_link">item_link</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">INTEGER</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="europeana_country"></A>
+<div class="objectname">Attribute: europeana_country</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item">item</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TEXT</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="europeana_dataprovider"></A>
+<div class="objectname">Attribute: europeana_dataprovider</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item">item</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TEXT</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="europeana_hasobject"></A>
+<div class="objectname">Attribute: europeana_hasobject</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item">item</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TEXT</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="europeana_isshownat"></A>
+<div class="objectname">Attribute: europeana_isshownat</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item">item</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TEXT</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="europeana_isshownby"></A>
+<div class="objectname">Attribute: europeana_isshownby</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item">item</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TEXT</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="europeana_language"></A>
+<div class="objectname">Attribute: europeana_language</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item">item</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TEXT</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="europeana_object"></A>
+<div class="objectname">Attribute: europeana_object</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item">item</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TEXT</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="europeana_previewNoDistribute"></A>
+<div class="objectname">Attribute: europeana_previewNoDistribute</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item">item</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TEXT</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="europeana_provider"></A>
+<div class="objectname">Attribute: europeana_provider</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item">item</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TEXT</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="europeana_rights"></A>
+<div class="objectname">Attribute: europeana_rights</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item">item</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TEXT</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="europeana_type"></A>
+<div class="objectname">Attribute: europeana_type</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item">item</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TEXT</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="europeana_unstored"></A>
+<div class="objectname">Attribute: europeana_unstored</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item">item</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TEXT</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="europeana_uri"></A>
+<div class="objectname">Attribute: europeana_uri</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item">item</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TEXT</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="europeana_usertag"></A>
+<div class="objectname">Attribute: europeana_usertag</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item">item</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TEXT</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="europeana_year"></A>
+<div class="objectname">Attribute: europeana_year</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item">item</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER VARYING</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="field"></A>
+<div class="objectname">Attribute: field</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item_link">item_link</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER VARYING</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="fk_cog_style_id"></A>
+<div class="objectname">Attribute: fk_cog_style_id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#usr">usr</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata">id</td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">INTEGER</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="fk_item_id"></A>
+<div class="objectname">Attribute: fk_item_id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item_topic">item_topic</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata">id</td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">INTEGER</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="fk_node_link_type_id"></A>
+<div class="objectname">Attribute: fk_node_link_type_id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#node_link">node_link</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata">id</td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">INTEGER</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="fk_parent_topic_id"></A>
+<div class="objectname">Attribute: fk_parent_topic_id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#topic">topic</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata">id</td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">INTEGER</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="fk_rating_scale_id"></A>
+<div class="objectname">Attribute: fk_rating_scale_id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#rating">rating</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata">id</td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">INTEGER</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="fk_rel_suri"></A>
+<div class="objectname">Attribute: fk_rel_suri</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#ubehaviour">ubehaviour</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata">URI of object user is navigating from</td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="fk_rel_suri"></A>
+<div class="objectname">Attribute: fk_rel_suri</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#behaviour_link">behaviour_link</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata">uri</td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER VARYING</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="fk_rel_turi"></A>
+<div class="objectname">Attribute: fk_rel_turi</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#ubehaviour">ubehaviour</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata">URI of object user is navigating to</td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="fk_rel_turi"></A>
+<div class="objectname">Attribute: fk_rel_turi</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#behaviour_link">behaviour_link</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata">uri</td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER VARYING</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="fk_rel_uri"></A>
+<div class="objectname">Attribute: fk_rel_uri</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#workspace">workspace</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER VARYING</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="fk_rel_uri"></A>
+<div class="objectname">Attribute: fk_rel_uri</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item_link">item_link</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata">uri</td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER VARYING</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="fk_rel_uri"></A>
+<div class="objectname">Attribute: fk_rel_uri</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#node">node</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata">uri</td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER VARYING</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="fk_rel_uri"></A>
+<div class="objectname">Attribute: fk_rel_uri</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#tagging">tagging</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="fk_rel_uri"></A>
+<div class="objectname">Attribute: fk_rel_uri</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#comment">comment</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER VARYING</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="fk_rel_uri"></A>
+<div class="objectname">Attribute: fk_rel_uri</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#rating">rating</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER VARYING</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="fk_sitem_id"></A>
+<div class="objectname">Attribute: fk_sitem_id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item_similarity">item_similarity</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata">id</td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">INTEGER</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="fk_snode_id"></A>
+<div class="objectname">Attribute: fk_snode_id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#node_link">node_link</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata">id</td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">INTEGER</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="fk_tag_id"></A>
+<div class="objectname">Attribute: fk_tag_id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#tagging">tagging</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata">id</td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">INTEGER</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="fk_titem_id"></A>
+<div class="objectname">Attribute: fk_titem_id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item_similarity">item_similarity</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata">id</td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">INTEGER</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="fk_tnode_id"></A>
+<div class="objectname">Attribute: fk_tnode_id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#node_link">node_link</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata">id</td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">INTEGER</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="fk_topic_id"></A>
+<div class="objectname">Attribute: fk_topic_id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item_topic">item_topic</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata">id</td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">INTEGER</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="fk_ugroup_id"></A>
+<div class="objectname">Attribute: fk_ugroup_id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#usr_ugroup">usr_ugroup</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata">id</td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">INTEGER</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="fk_user_id"></A>
+<div class="objectname">Attribute: fk_user_id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#path">path</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata">id</td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">INTEGER</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="fk_usession_id"></A>
+<div class="objectname">Attribute: fk_usession_id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#ubehaviour">ubehaviour</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata">id</td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">INTEGER</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="fk_usr_id"></A>
+<div class="objectname">Attribute: fk_usr_id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#workspace">workspace</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata">id</td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">INTEGER</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="fk_usr_id"></A>
+<div class="objectname">Attribute: fk_usr_id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#comment">comment</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata">id</td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">INTEGER</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="fk_usr_id"></A>
+<div class="objectname">Attribute: fk_usr_id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#usr_ugroup">usr_ugroup</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata">id</td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">INTEGER</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="fk_usr_id"></A>
+<div class="objectname">Attribute: fk_usr_id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#rating">rating</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata">id</td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">INTEGER</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="fk_usr_id"></A>
+<div class="objectname">Attribute: fk_usr_id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#usession">usession</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata">id</td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">INTEGER</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="fk_usr_id"></A>
+<div class="objectname">Attribute: fk_usr_id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#tagging">tagging</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata">id</td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">INTEGER</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="id"></A>
+<div class="objectname">Attribute: id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#rating_scale">rating_scale</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">SERIAL</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="id"></A>
+<div class="objectname">Attribute: id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#usr">usr</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">SERIAL</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="id"></A>
+<div class="objectname">Attribute: id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#tagging">tagging</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">SERIAL</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="id"></A>
+<div class="objectname">Attribute: id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#workspace">workspace</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">SERIAL</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="id"></A>
+<div class="objectname">Attribute: id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#ugroup">ugroup</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">SERIAL</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="id"></A>
+<div class="objectname">Attribute: id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#usession">usession</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">SERIAL</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="id"></A>
+<div class="objectname">Attribute: id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#usr_ugroup">usr_ugroup</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">SERIAL</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="id"></A>
+<div class="objectname">Attribute: id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#rating">rating</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">SERIAL</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="id"></A>
+<div class="objectname">Attribute: id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item_similarity">item_similarity</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">SERIAL</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="id"></A>
+<div class="objectname">Attribute: id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#behaviour_link">behaviour_link</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">SERIAL</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="id"></A>
+<div class="objectname">Attribute: id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#ubehaviour">ubehaviour</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">SERIAL</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="id"></A>
+<div class="objectname">Attribute: id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#comment">comment</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">SERIAL</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="id"></A>
+<div class="objectname">Attribute: id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item_topic">item_topic</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">SERIAL</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="id"></A>
+<div class="objectname">Attribute: id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#topic">topic</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">SERIAL</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="id"></A>
+<div class="objectname">Attribute: id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#node_link_type">node_link_type</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">SERIAL</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="id"></A>
+<div class="objectname">Attribute: id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#path">path</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">SERIAL</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="id"></A>
+<div class="objectname">Attribute: id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#cog_style">cog_style</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">SERIAL</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="id"></A>
+<div class="objectname">Attribute: id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#node_link">node_link</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">SERIAL</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="id"></A>
+<div class="objectname">Attribute: id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item_link">item_link</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">SERIAL</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="id"></A>
+<div class="objectname">Attribute: id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#tag">tag</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">SERIAL</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="id"></A>
+<div class="objectname">Attribute: id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#node">node</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata">id</td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">SERIAL</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="id"></A>
+<div class="objectname">Attribute: id</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item">item</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">SERIAL</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="idxfti"></A>
+<div class="objectname">Attribute: idxfti</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item">item</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TSVECTOR</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="isdeleted"></A>
+<div class="objectname">Attribute: isdeleted</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#tagging">tagging</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">BOOLEAN</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata">false</td></tr>
+</table>
+<A NAME="isdeleted"></A>
+<div class="objectname">Attribute: isdeleted</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#rating">rating</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">BOOLEAN</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata">false</td></tr>
+</table>
+<A NAME="isdeleted"></A>
+<div class="objectname">Attribute: isdeleted</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#path">path</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">BOOLEAN</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata">false</td></tr>
+</table>
+<A NAME="isdeleted"></A>
+<div class="objectname">Attribute: isdeleted</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#comment">comment</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">BOOLEAN</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata">false</td></tr>
+</table>
+<A NAME="isdeleted"></A>
+<div class="objectname">Attribute: isdeleted</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#usr">usr</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">BOOLEAN</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata">false</td></tr>
+</table>
+<A NAME="isdeleted"></A>
+<div class="objectname">Attribute: isdeleted</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#node">node</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">BOOLEAN</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata">false</td></tr>
+</table>
+<A NAME="label"></A>
+<div class="objectname">Attribute: label</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#rating_scale">rating_scale</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER VARYING</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="label"></A>
+<div class="objectname">Attribute: label</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#tag">tag</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER VARYING</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="lang"></A>
+<div class="objectname">Attribute: lang</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#tag">tag</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER VARYING</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="link"></A>
+<div class="objectname">Attribute: link</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item_link">item_link</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER VARYING</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="lom_audience"></A>
+<div class="objectname">Attribute: lom_audience</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#path">path</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TEXT</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="lom_length"></A>
+<div class="objectname">Attribute: lom_length</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#path">path</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER VARYING</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="method"></A>
+<div class="objectname">Attribute: method</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item_link">item_link</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER VARYING</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="openid"></A>
+<div class="objectname">Attribute: openid</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#usr">usr</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">BOOLEAN</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="pwd"></A>
+<div class="objectname">Attribute: pwd</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#usr">usr</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER VARYING</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="send"></A>
+<div class="objectname">Attribute: send</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#usession">usession</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TIMESTAMP</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="sentiment"></A>
+<div class="objectname">Attribute: sentiment</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item_similarity">item_similarity</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">NUMERIC</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="sentiment"></A>
+<div class="objectname">Attribute: sentiment</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item_link">item_link</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">NUMERIC</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="sid"></A>
+<div class="objectname">Attribute: sid</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#usession">usession</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER VARYING</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="source"></A>
+<div class="objectname">Attribute: source</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item_link">item_link</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER VARYING</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="sstart"></A>
+<div class="objectname">Attribute: sstart</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#usession">usession</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TIMESTAMP</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="start_offset"></A>
+<div class="objectname">Attribute: start_offset</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item_link">item_link</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">INTEGER</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="stime"></A>
+<div class="objectname">Attribute: stime</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#ubehaviour">ubehaviour</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata">Time spent at source in seconds</td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">INTEGER</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="title"></A>
+<div class="objectname">Attribute: title</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#ugroup">ugroup</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER VARYING</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="title"></A>
+<div class="objectname">Attribute: title</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#cog_style">cog_style</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER VARYING</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="title"></A>
+<div class="objectname">Attribute: title</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#node_link_type">node_link_type</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER VARYING</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="topic_thumbnails"></A>
+<div class="objectname">Attribute: topic_thumbnails</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#topic">topic</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER VARYING</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="trav_count"></A>
+<div class="objectname">Attribute: trav_count</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#node_link">node_link</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">INTEGER</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="trav_count"></A>
+<div class="objectname">Attribute: trav_count</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#behaviour_link">behaviour_link</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata">Number of times a link has been traversed</td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">INTEGER</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="tstamp"></A>
+<div class="objectname">Attribute: tstamp</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#usr">usr</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TIMESTAMP WITH TIME ZONE</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata">now()</td></tr>
+</table>
+<A NAME="tstamp"></A>
+<div class="objectname">Attribute: tstamp</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#node">node</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TIMESTAMP WITH TIME ZONE</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="tstamp"></A>
+<div class="objectname">Attribute: tstamp</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#comment">comment</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TIMESTAMP WITH TIME ZONE</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata">now()</td></tr>
+</table>
+<A NAME="tstamp"></A>
+<div class="objectname">Attribute: tstamp</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#path">path</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">TIMESTAMP WITH TIME ZONE</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata">now()</td></tr>
+</table>
+<A NAME="type"></A>
+<div class="objectname">Attribute: type</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#workspace">workspace</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER VARYING</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="type"></A>
+<div class="objectname">Attribute: type</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#node">node</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER VARYING</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="uri"></A>
+<div class="objectname">Attribute: uri</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#topic">topic</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER VARYING</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="uri"></A>
+<div class="objectname">Attribute: uri</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#usr">usr</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER VARYING</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="uri"></A>
+<div class="objectname">Attribute: uri</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#node">node</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER VARYING</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="uri"></A>
+<div class="objectname">Attribute: uri</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#path">path</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER VARYING</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="uri"></A>
+<div class="objectname">Attribute: uri</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#tag">tag</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER VARYING</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="uri"></A>
+<div class="objectname">Attribute: uri</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#item">item</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER VARYING</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+<A NAME="usr"></A>
+<div class="objectname">Attribute: usr</div>
+<div class="details">Attribute details:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Entity name</td><td class="fielddata"><A HREF="entd.html#usr">usr</A></td></tr>
+<tr><td class="fieldname">Description</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Primary key</td><td class="fielddata">No</td></tr>
+<tr><td class="fieldname">Refers to</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Data type</td><td class="fielddata">CHARACTER VARYING</td></tr>
+<tr><td class="fieldname">Domain</td><td class="fielddata"></td></tr>
+</table>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td width=30% class="fieldname">Not null</td><td class="fielddata">Yes</td></tr>
+<tr><td class="fieldname">Check</td><td class="fielddata"></td></tr>
+<tr><td class="fieldname">Default</td><td class="fielddata"></td></tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,14 @@
+Check the table "ubehaviour"  unused space with items.
+Utility.cs
+1.	Check the function DataTablesToDictionaryMasterDetail() some line is commente
+2.	Check for duplicate function DBExecuteScalar() and try to make one
+Search.asmx
+1.	Changed the function name from Search to DoSearch
+2.	Check SolrItem class I commented that
+Topic.asmx
+Check GetTopicHierarchy() function
+Social.asmx
+1. While tying to delete the Comment which are not in database getting the success "DeleteComment"
+2. If there is no URI in database its showing success MSG.
+
+Alok Singh Test
