@@ -18,4 +18,4 @@ System requirements
 Setup
 ============
 
-* Instructions
+* Setup instructions and documentation on the [Wiki section]
